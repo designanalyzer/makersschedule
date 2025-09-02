@@ -1,0 +1,11 @@
+{
+  "name": "Maker's Schedule",
+  "short_name": "Maker",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "theme_color": "#181818",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
+
