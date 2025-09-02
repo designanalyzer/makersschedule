@@ -13,7 +13,7 @@ export default function Navbar() {
   const isAdmin = user?.email === 'hello.emprove@gmail.com'; // Only show design system for admin user
 
   const navigation = [
-    { name: 'Projects', href: '/projects' },
+    { name: 'Clients', href: '/projects' },
     { name: 'Calendar', href: '/' },
     { name: 'Notes', href: '/notes' },
   ];
