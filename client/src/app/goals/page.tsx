@@ -159,9 +159,9 @@ export default function ProjectsPage() {
         setLoading(true);
         const projectsData = await GoalService.getGoals();
         
-        if (projectsData && projectsData.length > 0) {
-          console.log('Loaded real projects:', projectsData);
-          setProjects(projectsData);
+        if (projectsData && projectsData.data && projectsData.data.length > 0) {
+          console.log('Loaded real projects:', projectsData.data);
+          setProjects(projectsData.data);
         } else {
           // If no projects found, use example data
           console.log('No real projects found, using example data');
@@ -203,6 +203,7 @@ export default function ProjectsPage() {
           description: projectData.description,
           category: projectData.category,
           timeline: projectData.timeline,
+          startDate: projectData.startDate,
           weeklyHours: projectData.weeklyHours,
           workDays: projectData.workDays,
           bestTime: projectData.bestTime
